@@ -2,8 +2,8 @@
 ##### To run this app locally,
 
 ```javascript
-git clone 'https://github.com/7-baig/Quiz-App.git'
-cd Quiz-App
+git clone 'https://github.com/7-baig/Quiz-PWA.git'
+cd Quiz-PWA
 npm install
 npm start
 ```
