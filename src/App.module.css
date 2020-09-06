@@ -1,0 +1,109 @@
+.container {
+    background-color: #fceed1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.github {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.github img {
+    width: 30px;
+}
+.github img:hover {
+    animation-name: rotate;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome img {
+    width: 50%;
+    margin: 10px 0px;
+    animation-name: welcome;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+@keyframes welcome {
+    0% { 
+        transform: scale(1, 1)
+    }
+    25% {
+        transform: scale(1.1, 1.1)
+    }
+    50% {
+        transform: scale(1, 1)
+    }
+    75% {
+        transform: scale(1.1, 1.1)
+    }
+    100% {
+        transform: scale(1, 1)
+    }
+}
+.container button {
+    margin: 20px 0px;
+    background-color: #7d3cff;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    cursor: pointer;    
+}
+.container button:hover {
+    background-color: #8e56ff;
+}
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loading img {
+    width: 80px;
+    margin: 10px 0px;
+    animation-name: loader;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes loader {
+    0%   { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+}
+
+.loading p {
+    font-size: 2em;
+    margin: 10px 0px;
+}
+
+/* media queries */
+@media screen and (max-width: 480px) {
+    .github {
+        position: absolute;
+        bottom: 7px;
+        left: 7px;
+    }
+    .github img {
+        width: 20px;
+    }    
+}

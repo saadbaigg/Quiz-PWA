@@ -1,0 +1,24 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+body {
+    font-size: 10px; 
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 330px) {
+    body {
+        font-size: 7px;
+    }
+}
